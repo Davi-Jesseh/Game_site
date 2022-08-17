@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+
+:root{
+    --main_color:#0080FF;
+    --contrast_color:#E7FF19;
+    --alert_color:#FF2819;
+    --dark_blue:#1262B3;
+    --yellow_fade:#A1B309;
+
+}
+
+/* ==== Header Start ==== */
+.cabeçalho{
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1262B3;
+   
+   
+
+}
+
+.header_icon{
+    background-image: url(/images/equipe_1.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.nav_header{
+    padding: 5px;
+    
+    
+}
+
+.nav_header li a{
+    color: black;
+}
+
+.nav_header li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* ==== Header End ==== */
+
+
+/* ==== SlideShow Start ==== */
+.prison{
+    width: 100vw;
+    height: 100vh;
+}
+
+.content{        
+    width: 100%;
+    max-width: 1200px;  
+    overflow: hidden;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin-top: 1px;
+    
+    
+    
+}
+
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar{
+    width: 70px;
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.bar:hover{
+    background-color: #fff;
+}
+input{
+    display: none;
+}
+
+.slides{
+    width: 500%;
+    display: flex;
+    height: 100%;
+}
+
+.slide{
+    width: 20%;
+    transform: 0.6s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -40%;
+}
+
+/* ==== SlideShow End ==== */
+
+/* ==== Game About Start ==== */
+.game_about{    
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+    gap: 10px;
+}
+.div_33{
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 35px;
+    background-color: #E7FF19;
+    border-radius: 5%;
+    height: 300px;
+
+}
+
+/* ==== Game About End ==== */
+
+/* ==== About Team Start ==== */
+
+.know_team{
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+    
+}
+
+.about_team{
+    width: 100%;
+    max-width: 400px;
+}
+
+.container_person{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    max-width: 500px;
+}
+
+
+
+.container_person img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+/* ==== About Team End ==== */
