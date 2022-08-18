@@ -17,6 +17,7 @@
 
 }
 
+
 /* ==== Header Start ==== */
 .cabeçalho{
     width: 100%;
@@ -25,8 +26,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #1262B3;
-   
-   
+       
 
 }
 
@@ -65,13 +65,15 @@
 
 .content{        
     width: 100%;
-    max-width: 1200px;  
+     
     overflow: hidden;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 0%);
-    margin-top: 1px;
+    
+    max-height: 550px;
+    
     
     
     
@@ -157,37 +159,173 @@ input{
 
 /* ==== Game About End ==== */
 
+/* ==== Iframe Start ==== */
+.trailer-box{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 30px;
+   background-color: #A1B309;
+   
+  
+   
+}
+
+
+
+/* ==== Iframe End ==== */
+
 /* ==== About Team Start ==== */
 
 .know_team{
     width: 100%;
-    padding: 10px 15px;
-    display: flex;
+    display: flex;    
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    
+    background-color: #FF2819;
     
     
 }
 
-.about_team{
+#two:checked ~ .main-card{
+    margin-left: -100% ;
+}
+
+.container_card{
+    max-width: 950px;    
     width: 100%;
-    max-width: 400px;
+    padding: 80px 0;
+    overflow: hidden;
+    
+    
 }
 
-.container_person{
+.container_card .main-card{
+    width: 200%;   
     display: flex;
-    flex-direction: row;
-    width: 50%;
-    max-width: 500px;
+    justify-content: space-evenly;
+    transition: all 1s ease;
+
+}
+
+.container_card .main-card .cards{
+    width:calc(100% / 2 - 10px);
+    display: flex;
+    justify-content: space-between;       
+    margin: 0 20px;
+    flex-wrap: wrap;
+    
 }
 
 
 
-.container_person img{
-    width: 50px;
-    height: 50px;
+.main-card .cards .card{
+    background-color: white;
+    width: calc(100% / 3 - 10px);
+    padding: 30px;
+    border-radius: 12px;
+    transition: all 0.4s ease;
+    
+}
+.cards .card .content_card .img{
+    height:130px;
+    width: 130px;
+    margin-bottom: 14px;
+    padding: 3px;
+    background-color:#0080FF;
     border-radius: 50%;
 }
+
+.cards .card .content_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.card .content_card .img img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid white;
+   
+}
+
+.card .content_card .details .name{
+    font-weight: 500;
+    font-size:20px;
+}
+
+.card .content_card .details .job{
+    font-size: 20px;
+    color: #1262B3;
+}
+
+.card .content_card .media-icons{
+    display: flex;
+    margin-top: 10px;
+}
+
+.card .content_card .media-icons a{
+    height: 35px;
+    width: 35px;
+    margin: 0 4px;
+    border-radius:50% ;
+    line-height: 33px;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+    font-size: 14px;
+
+}
+
+.content_card .media-icons a:hover{
+    border-color: red;
+    background-color: white;
+    color: red;
+}
+
+.button{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    
+}
+
+.button label{
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    margin: 0 4px;
+    border-radius: 20px;
+}
+
+.button label.active{
+    width: 35px;
+}
+
+#one:checked ~ .button label.one{
+    width: 35px;
+}
+
+#two:checked ~ .button label.two{
+    width: 35px;
+}
+
+#two:checked ~ .button label.one{
+    width: 15px;
+}
+
+#one:checked ~ .button label.two{
+    width: 15px;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
 /* ==== About Team End ==== */
