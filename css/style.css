@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Silkscreen', cursive;    
 }
 
 
@@ -21,11 +24,12 @@
 /* ==== Header Start ==== */
 .cabeçalho{
     width: 100%;
-    padding: 10px 30px;
+    padding: 0 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #1262B3;
+    
        
 
 }
@@ -38,21 +42,39 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
+
 }
-.nav_header{
-    padding: 5px;
-    
-    
+.nav_header{    
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+
+   
+       
+   
 }
 
-.nav_header li a{
-    color: black;
-}
+
 
 .nav_header li{
-    display: inline-block;
-    margin-left: 20px;
+    color: white;    
+    margin: 0 5px;
+    cursor: pointer;
+    transform: skew(-18deg); 
+    transform: skew(-18deg); 
+    transform: skew(-18deg);
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease;
+    
 }
+.nav_header li:hover{
+    background-color: #0080FF;  
+}
+
+
 
 /* ==== Header End ==== */
 
@@ -64,19 +86,13 @@
 }
 
 .content{        
-    width: 100%;
-     
+    width: 100%;     
     overflow: hidden;
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 0%);
-    
-    max-height: 550px;
-    
-    
-    
-    
+    transform: translate(-50%, 0%);    
+    max-height: 550px;    
 }
 
 .navigation{
@@ -122,6 +138,7 @@ input{
 
 #slide1:checked ~ .s1{
     margin-left: 0;
+    background-color: #fff;
 }
 
 #slide2:checked ~ .s1{
@@ -135,39 +152,70 @@ input{
 /* ==== SlideShow End ==== */
 
 /* ==== Game About Start ==== */
-.game_about{    
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 10px;
-    gap: 10px;
-}
-.div_33{
-    width: 33.33%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 10px 35px;
-    background-color: #E7FF19;
-    border-radius: 5%;
-    height: 300px;
 
+.game_about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_game{
+    width: 100%;
+    
+}
+
+.container_game img{
+    width: 50%;
+}
+
+.content_game{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+    
+}
+
+.text_game{
+    width: 50%;
+    padding: 20px 25px;
+    font-size: 1.3em;
+    background-color:#0D151A;
+    color: #E7FF19;
+}
+
+.text_game h3{
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 /* ==== Game About End ==== */
 
 /* ==== Iframe Start ==== */
+
+.box_video{
+    width: 100%;
+    background-color: #1262B3;
+    padding: 30px 5px;
+}
+.box_video h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.9em;
+    color: white;
+    
+    
+     
+}
 .trailer-box{
    display: flex;
    align-items: center;
    justify-content: center;
    margin-bottom: 30px;
-   background-color: #A1B309;
    
-  
+   
    
 }
 
@@ -183,8 +231,25 @@ input{
     align-items: center;
     justify-content: center;
     background-color: #FF2819;
+    position: relative;
     
     
+}
+
+
+
+.text_equipe{
+    height: 60px;
+    width: 160px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border-radius: 40px;
+    color: black;
+    text-align: center;
+    margin: 10px 0 0 10px;
+    padding: 10px 0;
 }
 
 #two:checked ~ .main-card{
@@ -205,6 +270,7 @@ input{
     display: flex;
     justify-content: space-evenly;
     transition: all 1s ease;
+    
 
 }
 
@@ -262,7 +328,7 @@ input{
 
 .card .content_card .details .job{
     font-size: 20px;
-    color: #1262B3;
+    color: #FF2819;
 }
 
 .card .content_card .media-icons{
@@ -280,6 +346,7 @@ input{
     border: 2px solid transparent;
     transition: all 0.4s ease;
     font-size: 14px;
+    color: #1262B3;
 
 }
 
@@ -329,3 +396,13 @@ input[type="radio"]{
 }
 
 /* ==== About Team End ==== */
+
+/* ==== Footer Start ====*/
+footer{
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #0080FF;
+    color: white;
+}
+/* ==== Footer End ====*/
